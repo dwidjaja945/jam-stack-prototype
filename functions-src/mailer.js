@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const clientId = "1056163774806-6e1dqmju5n83jb36hjs5jcruvheh7uar.apps.googleusercontent.com";
 const refreshToken = "1/eOmS1xTYg_SSb5vXtD8dIy9OldCa1lvyPyleJa8MYsY";
 
-exports.handler = function (event, contect, callback) {
+exports.handler = function (event, context, callback) {
     const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
